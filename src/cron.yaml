@@ -1,0 +1,16 @@
+cron:
+- description: clear database
+  url: /clearDatabase
+  schedule: every sunday of month 02:55
+  timezone: Asia/Taipei
+- description: fetch data and build database
+  url: /fetchData
+  schedule: every sunday of month 03:00
+  timezone: Asia/Taipei
+  
+########## schedule format ##########
+# every 5 minutes
+# every 12 hours
+# 2nd,third mon,wed,thu of march 17:00
+# every monday of month 09:00
+# 1st monday of sep,oct,nov 17:00

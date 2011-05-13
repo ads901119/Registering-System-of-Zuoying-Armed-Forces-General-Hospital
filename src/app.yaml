@@ -1,0 +1,23 @@
+application: ads901119hospital
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /fetchDataWorker
+  script: Hospital.py
+  login: admin
+- url: /fetchData
+  script: Hospital.py
+  login: admin
+- url: /clearDatabase
+  script: Hospital.py
+  login: admin
+- url: /listDatabase
+  script: Hospital.py
+  login: admin
+- url: /.*
+  script: Hospital.py
+
+builtins:
+- datastore_admin: on
